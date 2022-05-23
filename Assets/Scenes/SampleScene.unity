@@ -300,6 +300,8 @@ GameObject:
   - component: {fileID: 1704091600}
   - component: {fileID: 1704091603}
   - component: {fileID: 1704091602}
+  - component: {fileID: 1704091604}
+  - component: {fileID: 1704091605}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -409,3 +411,36 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -1.7441705}
   serializedVersion: 2
   m_Radius: 0.51544344
+--- !u!114 &1704091604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704091599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6225d11621866c44a807e58296b221f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRigidBody: {fileID: 1704091602}
+  playerSpeed: 50
+--- !u!95 &1704091605
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704091599}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb7ebaa651b6a984eabc3a8b86f2b994, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
