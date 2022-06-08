@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class AreaExit : MonoBehaviour
 {
     [SerializeField] string sceneToLoad;
+    [SerializeField] string pointOfAppearance;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class AreaExit : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            Player.instance.pointOfAppearance = pointOfAppearance;
             SceneManager.LoadScene(sceneToLoad);
         }
     }

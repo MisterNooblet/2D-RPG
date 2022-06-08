@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float playerSpeed;
     [SerializeField] Animator playerAnimator;
 
-    public string transitionName;
+    public string pointOfAppearance;
     // Start is called before the first frame update
     void Start()
     {
