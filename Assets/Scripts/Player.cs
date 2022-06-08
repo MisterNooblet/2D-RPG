@@ -21,7 +21,6 @@ public class Player : MonoBehaviour
         {
             instance = this;
         }
-        instance = this;
 
         DontDestroyOnLoad(gameObject);
     }
